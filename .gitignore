@@ -1,0 +1,8 @@
+# Rust files
+Cargo.lock
+
+# Binaries
+target/
+
+# Temporary files
+*.swp
