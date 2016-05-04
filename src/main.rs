@@ -1,10 +1,11 @@
 use std::env;
 
 fn main() {
-    let mut chars: [u8; 128] = [0; 128];        // Initialize an array of 0 for counting chars appearance
+    let mut chars: [u8; 128] = [0; 128];    // Initialize an array of 0 for counting chars appearance
     let mut it = env::args();
-    it.next();
-    let string = it.next().unwrap();      // Get the given string from command line
+
+    it.next();                              // Ignore the program name
+    let string = it.next().unwrap();        // Get the given string from command line
 
     // Count char occurency
     for c in string.into_bytes() {
